@@ -27,6 +27,7 @@ public class Main {
         IntervalAggregator ia = new IntervalAggregator(ils, 60, 60, 24);
         
         StreamBuilder b = new StreamBuilder();
+        b.userAgent = "The testing of a bot by /u/sb04mai";
         b.wait = 5000;
         b.listeners = new StreamListener[]{ia};
         
